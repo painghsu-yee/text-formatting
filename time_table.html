@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Time Table for First Year Students</title>
+    <style>
+      body {
+        font-family: Calibri, Arial, sans-serif;
+        margin: 20px;
+      }
+      .container {
+        border: 2px solid #2b6cb0;
+        padding: 20px 30px;
+        width: 720px;
+        margin: 0 auto;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 22px;
+      }
+      h3 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        border: 2px solid #ffffff;
+        padding: 6px 4px;
+      }
+      /* Header Row Color */
+      .header-cell {
+        background-color: navajowhite;
+        color: #000000;
+      }
+      /* Subject & Day Colors */
+      .blue-cell {
+        background-color: #0033cc;
+        color: #ffffff;
+      }
+      .red-cell {
+        background-color: red;
+        color: #ffffff;
+      }
+      .brown-cell {
+        background-color: brown;
+        color: #ffffff;
+      }
+      .purple-cell {
+        background-color: blueviolet;
+        color: #ffffff;
+      }
+      .lunch-cell {
+        background-color: aqua;
+        color: #000000;
+        font-weight: normal;
+      }
+      .legend {
+        font-size: 13px;
+        line-height: 1.6;
+        /* font-style: italic; */
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Computer University</h2>
+      <h3>Time Table for First Year Students</h3>
+
+      <table>
+        <!-- Time Slots Header -->
+        <tr>
+          <th class="header-cell">Day</th>
+          <th class="header-cell">8:00-8:45</th>
+          <th class="header-cell">8:45-9:30</th>
+          <th class="header-cell">9:30-10:15</th>
+          <th class="header-cell">10:15-11:00</th>
+          <th class="header-cell">11:00-11:45</th>
+          <th class="header-cell">11:45-1:00</th>
+          <th class="header-cell">1:00-1:45</th>
+          <th class="header-cell">1:45-2:30</th>
+        </tr>
+
+        <!-- Monday -->
+        <tr>
+          <td class="blue-cell">Monday</td>
+          <td class="blue-cell" colspan="2">101</td>
+          <td class="red-cell" colspan="2">English</td>
+          <td class="lunch-cell">lunch</td>
+          <td class="brown-cell" colspan="2">Maths</td>
+          <td class="purple-cell">Myanmar</td>
+        </tr>
+
+        <!-- Tuesday -->
+        <tr>
+          <td class="blue-cell">Tuesday</td>
+          <td class="blue-cell" rowspan="2">102</td>
+          <td class="brown-cell" colspan="2">Maths</td>
+          <td class="purple-cell">Myanmar</td>
+          <td class="lunch-cell">lunch</td>
+          <td class="blue-cell" colspan="2">103</td>
+          <td class="blue-cell">104</td>
+        </tr>
+
+        <!-- Wednesday -->
+        <tr>
+          <td class="blue-cell">Wednesday</td>
+          <td class="red-cell">English</td>
+          <td class="blue-cell" colspan="2">101</td>
+          <td class="lunch-cell">lunch</td>
+          <td class="blue-cell" colspan="2">104</td>
+          <td class="red-cell">English</td>
+        </tr>
+
+        <!-- Thursday -->
+        <tr>
+          <td class="blue-cell">Thursday</td>
+          <td class="purple-cell" rowspan="2">Myanmar</td>
+          <td class="blue-cell" colspan="2">103</td>
+          <td class="blue-cell">Lab</td>
+          <td class="lunch-cell">lunch</td>
+          <td class="blue-cell" colspan="2">102</td>
+          <td class="red-cell">English</td>
+        </tr>
+
+        <!-- Friday -->
+        <tr>
+          <td class="blue-cell">Friday</td>
+          <td class="blue-cell">104</td>
+          <td class="blue-cell" colspan="2">Lab</td>
+          <td class="lunch-cell">lunch</td>
+          <td class="blue-cell" colspan="2">101</td>
+          <td class="blue-cell">103</td>
+        </tr>
+      </table>
+
+      <!-- Subject Legend -->
+      <div class="legend">
+        101 - Introduction to Computer System (Daw Myo Myo)<br />
+        102 - Digital (Daw Nilar)<br />
+        103 - Information Systems (U Naing Win)<br />
+        104 - Computer Programming (U Mg Mg)<br />
+        Myanmar (Daw Win Win)<br />
+        English (Daw Soe Soe)<br />
+        Maths (Daw Ei Mon)
+      </div>
+    </div>
+  </body>
+</html>
