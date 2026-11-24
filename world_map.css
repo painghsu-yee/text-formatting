@@ -1,0 +1,76 @@
+      /* body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 40px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        height: auto;
+        margin: 20px auto;
+        border: 2px solid #4a90e2;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      img {
+        width: 380px;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+      } */
+
+    
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    margin: 20px;
+  }
+
+  /* ဘောင်ခတ်ထားမယ့် Box (စာမျက်နှာ ၆ ခုလုံး အကျယ်အတူတူ ဖြစ်သွားပါမယ်) */
+  .container {
+    width: 550px;              /* စာမျက်နှာတိုင်း အကျယ် 550px အတိအကျ ဖြစ်စေရန် */
+    max-width: 100%;           /* ဖုန်းနဲ့ကြည့်ရင် ဘောင်မကျော်သွားအောင် */
+    margin: 0 auto;            /* အလယ်တည့်တည့်မှာ ထားရန် */
+    padding: 25px;             /* ဘောင်နဲ့ စာသားကြား အကွာအဝေး */
+    border: 2px solid #4a90e2; /* ပုံထဲကလို အပြာရောင်ဘောင် */
+    background-color: #ffffff;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 26px;
+    color: #000000;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+
+  /* ပုံအားလုံး အရွယ်အစား တစ်ညီတည်း ဖြစ်စေရန် */
+  .container img {
+    width: 300px;
+                  /* ပုံတိုင်းရဲ့ အကျယ်ကို 300px အတိအကျထားမယ် */
+    /* height: 220px;  */
+                /* ပုံတိုင်းရဲ့ အမြင့်ကို 220px အတိအကျထားမယ် */
+    object-fit: contain;       /* ပုံတွေ မပြားသွားဘဲ မူရင်းအချိုးအတိုင်း ဘောင်ထဲကွက်တိဝင်အောင် */
+    display: block;
+    /* margin-top: 10px; */
+    /* margin-bottom: 5px; */
+    margin: 10px 0 5px;
+    border: 1px solid #cccccc; /* ပုံဘေးမှာ ဘောင်ပါးပါးလေး ခတ်ချင်ရင် */
+  }
